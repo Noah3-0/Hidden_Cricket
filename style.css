@@ -1,0 +1,47 @@
+/* Add some padding and a background color to the body element */
+body {
+    padding: 20px;
+    background-color: rgb(57, 57, 57)
+  }
+  
+  /* Style the h1 element */
+  h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+
+  p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Style the button element */
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(39, 194, 39);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Add a hover effect to the button */
+  button:hover {
+    background-color: green;
+  }
+
+  form {
+    text-align: center;
+  }
+  
+  .result {
+    text-align: center;
+  }
