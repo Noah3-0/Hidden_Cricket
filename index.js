@@ -6,12 +6,22 @@ const band = document.getElementById("bdd");
 
 let checkValue = 0;
 let array;
+let bool = true;
 
 // Button to start the game
 newGame.addEventListener("click", () => {
-  band.style.marginTop = "-28px";
-  mathRandom();
-  console.log(array);
+  if (bool === true) {
+    band.style.marginTop = "-28px";
+    mathRandom();
+    console.log(array);
+    bool = false;
+  } else {
+    if (confirm("reset the game ?")) {
+      mathRandom();
+      result.innerHTML = "";
+      console.log(array);
+    }
+  }
 });
 
 form.addEventListener("submit", (e) => {
