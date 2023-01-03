@@ -2,12 +2,14 @@ const newGame = document.getElementById("new-game");
 const form = document.getElementById("form");
 const result = document.getElementById("result");
 const input = document.getElementById("input");
+const band = document.getElementById("bdd");
 
 let checkValue = 0;
 let array;
 
 // Button to start the game
 newGame.addEventListener("click", () => {
+  band.style.marginTop = "-28px";
   mathRandom();
   console.log(array);
 });
@@ -41,3 +43,5 @@ function check() {
     }
   }
 }
+
+// -28px
