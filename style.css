@@ -57,5 +57,21 @@ body {
     margin-top: -60px;
     text-align: center;
     background-color: rgb(39, 194, 39);
-    transition: 1s;
+    transition: 1.5s;
+}
+
+.number-display {
+  width: auto;
+  font: bold;
+    font-size: 23px;
+    background: rgb(39, 194, 39);
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 1.5px black;
+
 }

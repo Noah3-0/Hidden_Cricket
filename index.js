@@ -11,7 +11,7 @@ let bool = true;
 // Button to start the game
 newGame.addEventListener("click", () => {
   if (bool === true) {
-    band.style.marginTop = "-28px";
+    popUp();
     mathRandom();
     console.log(array);
     bool = false;
@@ -19,6 +19,7 @@ newGame.addEventListener("click", () => {
     if (confirm("reset the game ?")) {
       mathRandom();
       result.innerHTML = "";
+      popUp();
       console.log(array);
     }
   }
@@ -29,6 +30,13 @@ form.addEventListener("submit", (e) => {
   console.log(checkValue);
   check();
 });
+
+function popUp() {
+  band.style.marginTop = "-28px";
+  setTimeout(() => {
+    band.style.marginTop = "-60px";
+  }, 3000);
+}
 
 function mathRandom() {
   const numbers = new Set();
@@ -49,7 +57,7 @@ input.addEventListener("input", (e) => {
 function check() {
   for (let i = 0; i < array.length; i++) {
     if (checkValue == array[i]) {
-      result.innerHTML += `<p>${checkValue}</p>`;
+      result.innerHTML += `<p class="number-display">${checkValue}</p>`;
     }
   }
 }
