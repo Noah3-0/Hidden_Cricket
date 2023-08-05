@@ -29,6 +29,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log(checkValue);
   check();
+  form.reset();
 });
 
 function popUp() {
