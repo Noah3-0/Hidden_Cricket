@@ -61,5 +61,3 @@ function check() {
     }
   }
 }
-
-// -28px
