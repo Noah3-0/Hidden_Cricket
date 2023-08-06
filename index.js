@@ -56,11 +56,23 @@ input.addEventListener("input", (e) => {
 });
 
 function check() {
+  let found = false;
+
   for (let i = 0; i < array.length; i++) {
     if (checkValue == array[i]) {
       result.innerHTML += `<p class="number-display">${checkValue}</p>`;
       array.splice(i, 1);
-    } else {
+      found = true;
+      break;
     }
+  }
+
+  if (!found) {
+    input.style.backgroundColor = "red";
+    setTimeout(() => {
+      input.style.backgroundColor = "";
+    }, 1000);
+  } else {
+    input.style.backgroundColor = "";
   }
 }
