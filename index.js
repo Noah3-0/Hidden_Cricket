@@ -42,7 +42,7 @@ function popUp() {
 function mathRandom() {
   const numbers = new Set();
 
-  while (numbers.size < 7) {
+  while (numbers.size < 6) {
     numbers.add(Math.floor(Math.random() * 21));
   }
 
@@ -59,6 +59,8 @@ function check() {
   for (let i = 0; i < array.length; i++) {
     if (checkValue == array[i]) {
       result.innerHTML += `<p class="number-display">${checkValue}</p>`;
+      array.splice(i, 1);
+    } else {
     }
   }
 }
